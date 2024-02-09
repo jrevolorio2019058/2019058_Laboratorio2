@@ -11,15 +11,12 @@ const MascotaSchema = Schema({
         require: [true, 'La raza es obligatoria']
     },
     edad: {
-        type: Number,
+        type: String,
         require: [true, 'La edad es obligatoria']
     },
     motivoAdopcion: {
         type: String,
         require: [true, 'Es necesario un motivo por el cual esta en adopcion']
-    },
-    img: {
-        type: String,
     },
     estadoAdopcion: {
         type: Boolean,

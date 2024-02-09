@@ -13,7 +13,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"nombre\": \"Test10\",\r\n    \"correo\": \"Test10\",\r\n    \"password\": \"123456\",\r\n    \"role\": \"ADMIN_ROLE\"\r\n}",
+					"raw": "{\r\n    \"nombre\": \"Test13\",\r\n    \"correo\": \"Test13\",\r\n    \"password\": \"123456\",\r\n    \"role\": \"ADMIN_ROLE\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -57,9 +57,21 @@
 		},
 		{
 			"name": "getUsuarioByid",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "GET",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
 					"raw": "http://localhost:3000/api/usuarios/65c4eba3d6a0f22717575880",
 					"protocol": "http",
@@ -122,6 +134,135 @@
 						"api",
 						"usuarios",
 						"65c11bff085acb075bc8be74"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "AgregarMascota",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"especie\": \"Loro\",\r\n    \"raza\": \"Verde\",\r\n    \"edad\": \"2\",\r\n    \"motivoAdpocion\": \"Nacimiento\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/mascotas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"mascotas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mascotasGet",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/mascotas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"mascotas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getMascotaById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/mascotas/65c6565a06473e9f8c0a12fd",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"mascotas",
+						"65c6565a06473e9f8c0a12fd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mascotaPut",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"edad\": \"10\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/mascotas/65c6565a06473e9f8c0a12fd",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"mascotas",
+						"65c6565a06473e9f8c0a12fd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mascotaDelete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/mascotas/65c658da7ee08361605422d6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"mascotas",
+						"65c658da7ee08361605422d6"
 					]
 				}
 			},

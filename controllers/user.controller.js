@@ -44,6 +44,19 @@ const usuariosPut = async (req, res) => {
 
 }
 
+const login = async (req, res) => {
+
+    const { _id, nombre, role, estado, google, ...resto} = req.body;
+
+    res.status(200).json({
+
+        msd: 'Creedenciales exitosas'
+
+    });
+
+
+}
+
 const usuariosDelete = async (req, res) => {
     
     const { id } = req.params;
@@ -80,5 +93,6 @@ module.exports = {
     usuariosGet,
     getUsuarioByid,
     usuariosPut,
-    usuariosDelete
+    usuariosDelete,
+    login
 }

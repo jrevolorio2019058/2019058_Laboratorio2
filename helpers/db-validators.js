@@ -31,9 +31,27 @@ const esRolValido = async (role='') => {
     }
 }
 
+const validacionLogin = async (correo = '', password = '') => {
+
+    const existeCorreo = await Usuario.findOne({ correo });
+    const existePassword = await Usuario.findOne({ password });
+
+    if(!existeCorreo){
+        throw new Error(`El correo ${ correo } no existe en base de datos.` )
+    } else if (!existePassword) {
+        throw new Error(`La contraseña ${ password } no existe en base de datos.` )
+    }
+    
+    /*else if (!existeCorreo || !existePassword) {
+        throw new Error(`El correo ${ correo } y la contraseña ${ password } no existe en base de datos.` )
+    }*/
+
+}
+
 module.exports = {
     existenteEmail,
     existeUsuarioById,
     esRolValido,
-    existeMascotaById
+    existeMascotaById,
+    validacionLogin
 }

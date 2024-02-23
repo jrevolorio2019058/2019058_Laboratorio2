@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "ba54369b-5b1e-483c-8346-0eb5e4c59a4c",
-		"name": "api_uno",
+		"name": "laboratorio2",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "32787267"
 	},
@@ -13,7 +13,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"nombre\": \"Test13\",\r\n    \"correo\": \"Test13\",\r\n    \"password\": \"123456\",\r\n    \"role\": \"ADMIN_ROLE\"\r\n}",
+					"raw": "{\r\n    \"nombre\": \"Jorge Revolorio\",\r\n    \"correo\": \"jrevolorio@gmail.com\",\r\n    \"password\": \"123456\",\r\n    \"role\": \"ADMIN_ROLE\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -73,7 +73,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/api/usuarios/65c4eba3d6a0f22717575880",
+					"raw": "http://localhost:3000/api/usuarios/65d8b0b429ff9d8477b26f47",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -82,7 +82,7 @@
 					"path": [
 						"api",
 						"usuarios",
-						"65c4eba3d6a0f22717575880"
+						"65d8b0b429ff9d8477b26f47"
 					]
 				}
 			},
@@ -95,7 +95,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"nombre\": \"Luis Miguel\"\r\n}",
+					"raw": "{\r\n    \"nombre\": \"Abraham Revolorio\",\r\n    \"correo\": \"abrahamrevolorio@gmail.com\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -103,7 +103,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/api/usuarios/65c4eba3d6a0f22717575880",
+					"raw": "http://localhost:3000/api/usuarios/65d8b0b429ff9d8477b26f47",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -112,7 +112,7 @@
 					"path": [
 						"api",
 						"usuarios",
-						"65c4eba3d6a0f22717575880"
+						"65d8b0b429ff9d8477b26f47"
 					]
 				}
 			},
@@ -124,7 +124,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/api/usuarios/65c11bff085acb075bc8be74",
+					"raw": "http://localhost:3000/api/usuarios/65d8b0b429ff9d8477b26f47",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -133,17 +133,9 @@
 					"path": [
 						"api",
 						"usuarios",
-						"65c11bff085acb075bc8be74"
+						"65d8b0b429ff9d8477b26f47"
 					]
 				}
-			},
-			"response": []
-		},
-		{
-			"name": "login",
-			"request": {
-				"method": "GET",
-				"header": []
 			},
 			"response": []
 		},
@@ -154,7 +146,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"especie\": \"Loro\",\r\n    \"raza\": \"Verde\",\r\n    \"edad\": \"2\",\r\n    \"motivoAdpocion\": \"Nacimiento\"\r\n\r\n}",
+					"raw": "{\r\n    \"especie\": \"Gato\",\r\n    \"raza\": \"Egipcio\",\r\n    \"edad\": \"3\",\r\n    \"motivoAdpocion\": \"Abandono\"\r\n\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -202,7 +194,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/api/mascotas/65c6565a06473e9f8c0a12fd",
+					"raw": "http://localhost:3000/api/mascotas/65d8ad9a05abe20b8ca945f8",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -211,7 +203,7 @@
 					"path": [
 						"api",
 						"mascotas",
-						"65c6565a06473e9f8c0a12fd"
+						"65d8ad9a05abe20b8ca945f8"
 					]
 				}
 			},
@@ -224,7 +216,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"edad\": \"10\"\r\n}",
+					"raw": "{\r\n    \"especie\":\"Zorro\",\r\n    \"raza\":\"fennec\",\r\n    \"edad\": \"5\",\r\n    \"motivoAdopcion\": \"Maltrato\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -232,7 +224,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/api/mascotas/65c6565a06473e9f8c0a12fd",
+					"raw": "http://localhost:3000/api/mascotas/65d8ad7005abe20b8ca945f6",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -241,7 +233,7 @@
 					"path": [
 						"api",
 						"mascotas",
-						"65c6565a06473e9f8c0a12fd"
+						"65d8ad7005abe20b8ca945f6"
 					]
 				}
 			},
@@ -253,7 +245,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/api/mascotas/65c658da7ee08361605422d6",
+					"raw": "http://localhost:3000/api/mascotas/65d8ad9a05abe20b8ca945f8",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -262,7 +254,7 @@
 					"path": [
 						"api",
 						"mascotas",
-						"65c658da7ee08361605422d6"
+						"65d8ad9a05abe20b8ca945f8"
 					]
 				}
 			},

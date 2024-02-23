@@ -32,7 +32,7 @@ const getUsuarioByid = async (req, res) => {
 const usuariosPut = async (req, res) => {
 
     const { id } = req.params;
-    const { _id, password, google, correo, ...resto} = req.body;
+    const { _id, password, google, ...resto} = req.body;
     await Usuario.findByIdAndUpdate(id, resto);
     const usuario = await Usuario.findOne({_id: id});
 

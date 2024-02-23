@@ -32,7 +32,7 @@ const getMascotaByid = async (req, res) => {
 const mascotaPut = async (req, res) => {
 
     const { id } = req.params;
-    const { _id, especie, raza, ...resto} = req.body;
+    const { _id,estadoAdopcion, ...resto} = req.body;
     await Mascota.findByIdAndUpdate(id, resto);
     const mascota = await Mascota.findOne({_id: id});
 
